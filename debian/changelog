@@ -1,0 +1,614 @@
+libwww-mechanize-perl (2.06-1) unstable; urgency=medium
+
+  [ Florian Schlichting ]
+  * Import upstream version 2.05.
+
+  [ gregor herrmann ]
+  * Import upstream version 2.06.
+  * Update years of packaging copyright.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 30 Oct 2021 02:01:56 +0200
+
+libwww-mechanize-perl (2.04-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since stretch:
+    + Build-Depends-Indep: Drop versioned constraint on libcgi-pm-perl.
+    + libwww-mechanize-perl: Drop versioned constraint on libcgi-pm-perl in
+      Depends.
+
+  [ Florian Schlichting ]
+  * Import upstream version 2.04.
+  * Update copyright years
+  * Declare compliance with Debian Policy 4.6.0
+
+ -- Florian Schlichting <fsfs@debian.org>  Tue, 24 Aug 2021 17:45:00 +0800
+
+libwww-mechanize-perl (2.03-1) unstable; urgency=medium
+
+  * Import upstream version 2.03.
+  * Declare compliance with Debian Policy 4.5.1.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 18 Nov 2020 20:58:43 +0100
+
+libwww-mechanize-perl (2.02-1) unstable; urgency=medium
+
+  * Import upstream version 2.02.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 14 Oct 2020 20:11:22 +0200
+
+libwww-mechanize-perl (2.01-1) unstable; urgency=medium
+
+  * Update previous changelog entry.
+  * Import upstream version 2.01.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 20 Sep 2020 17:27:20 +0200
+
+libwww-mechanize-perl (2.00-2) unstable; urgency=medium
+
+  * Skip t/cookies.t during build and autopkgtest.
+    The test fails on IPv6-only hosts. (Closes: #962727)
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 13 Jun 2020 00:56:53 +0200
+
+libwww-mechanize-perl (2.00-1) unstable; urgency=medium
+
+  * Import upstream version 2.00.
+  * Update test and runtime dependencies.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 12 Jun 2020 13:46:39 +0200
+
+libwww-mechanize-perl (1.97-1) unstable; urgency=medium
+
+  * Import upstream version 1.97.
+  * Bump debhelper-compat to 13.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 18 May 2020 18:56:09 +0200
+
+libwww-mechanize-perl (1.96-1) unstable; urgency=medium
+
+  * Import upstream version 1.96.
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 4.5.0.
+  * Set Rules-Requires-Root: no.
+  * Wrap long lines in changelog entries: 1.30-2, 0.63-1.
+  * Set upstream metadata fields: Bug-Submit.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 23 Feb 2020 00:12:38 +0100
+
+libwww-mechanize-perl (1.95-1) unstable; urgency=medium
+
+  * Import upstream version 1.95.
+  * Update autopkgtest.patch (fuzz).
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 02 Nov 2019 04:04:17 +0100
+
+libwww-mechanize-perl (1.93-1) unstable; urgency=medium
+
+  * debian/*: replace ADTTMP with AUTOPKGTEST_TMP.
+  * Import upstream version 1.93.
+  * Make (build) dependency on libhttp-daemon-perl versioned.
+  * Annotate test-only build dependencies with <!nocheck>.
+  * Declare compliance with Debian Policy 4.4.1.
+  * Bump debhelper-compat to 12.
+  * debian/watch: use uscan version 4.
+  * Remove obsolete fields Name, Contact from debian/upstream/metadata.
+  * Drop localhost-ipv6-test.patch.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 05 Oct 2019 03:55:44 +0200
+
+libwww-mechanize-perl (1.91-2) unstable; urgency=medium
+
+  * Add patch to fix test which was broken by HTTP::Daemon's added IPv6
+    support. Thanks to Fabian Grünbichler for the patch.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 02 Mar 2019 00:11:20 +0100
+
+libwww-mechanize-perl (1.91-1) unstable; urgency=medium
+
+  * Import upstream version 1.91.
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 4.3.0.
+  * Bump debhelper compatibility level to 11.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 12 Jan 2019 18:28:55 +0100
+
+libwww-mechanize-perl (1.90-1) unstable; urgency=medium
+
+  * Import upstream version 1.90.
+  * Drop pod-syntax.patch, fixed upstream.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 17 Nov 2018 19:53:33 +0100
+
+libwww-mechanize-perl (1.89-1) unstable; urgency=medium
+
+  * Import upstream version 1.89.
+  * Drop pod-syntax.patch, merged upstream.
+  * Declare compliance with Debian Policy 4.2.1.
+  * Remove trailing whitespace from debian/*.
+  * Add a new pod-syntax.patch (already fixed in upstream git).
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 09 Nov 2018 20:40:59 +0100
+
+libwww-mechanize-perl (1.88-1) unstable; urgency=medium
+
+  [ Damyan Ivanov ]
+  * declare conformance with Policy 4.1.3 (no changes needed)
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ gregor herrmann ]
+  * Import upstream version 1.88.
+  * Drop html-form-input.patch, fixed upstream.
+  * Update years of upstream and packaging copyright.
+  * Declare compliance with Debian Policy 4.1.4.
+  * Bump debhelper compatibility level to 10.
+  * Add a patch to fix a typo in a POD directive.
+  * Add a duck-overrides for false positives about a moved domain.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 07 May 2018 20:29:48 +0200
+
+libwww-mechanize-perl (1.86-1) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * Drop debian/tests/pkg-perl/smoke-tests, handled by pkg-perl-
+    autopkgtest now.
+
+  [ Florian Schlichting ]
+  * Import upstream version 1.86
+  * Update copyright years
+  * Drop build-deps for online/author tests
+  * Explain where to find POD on HTML::Form::Input (closes: #751465)
+  * Declare compliance with Debian Policy 4.1.0
+
+ -- Florian Schlichting <fsfs@debian.org>  Sun, 24 Sep 2017 14:59:13 +0200
+
+libwww-mechanize-perl (1.83-1) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * Rename autopkgtest configuration file(s) as per new pkg-perl-
+    autopkgtest schema.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+
+  [ Nick Morrott ]
+  * Import upstream version 1.78
+  * Update copyright years and Upstream-Contact
+  * Update metadata
+  * Declare compliance with Debian Policy 3.9.8
+  * Refresh (build-) dependencies
+  * Drop document_proxy.patch (applied upstream)
+  * Add debian/libwww-mechanize-perl.lintian-overrides
+
+  [ gregor herrmann ]
+  * autopkgtest: enable more smoke tests.
+  * Remove Jaldhar H. Vyas, Jay Bonci, Kees Cook, Rene Mayorga, and
+    Ryan Niebur from Uploaders. Thanks for your work!
+
+  * Import upstream versions 1.79, 1.83.
+  * Add new build dependencies.
+  * Update years of packaging copyright.
+  * debian/rules: disable DNS queries in tests.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 22 Oct 2016 22:33:07 +0200
+
+libwww-mechanize-perl (1.75-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Lucas Kanashiro ]
+  * Add debian/upstream/metadata
+  * Import upstream version 1.75
+    Fixes "test suite: Use of the encoding pragma is deprecated"
+    (Closes: #762259)
+  * Bump debhelper compatibility level to 9
+
+  [ gregor herrmann ]
+  * Update (build) dependencies.
+
+ -- Lucas Kanashiro <kanashiro.duarte@gmail.com>  Fri, 14 Aug 2015 13:33:42 -0300
+
+libwww-mechanize-perl (1.73-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * debian/control: remove Nicholas Bamber from Uploaders on request of
+    the MIA team.
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ Niko Tyni ]
+  * Declare the package autopkgtestable.
+  * Explicitly build-depend on libcgi-pm-perl.
+  * Update to Standards-Version 3.9.6. No changes needed.
+
+ -- Niko Tyni <ntyni@debian.org>  Sat, 20 Sep 2014 11:44:56 +0300
+
+libwww-mechanize-perl (1.73-1) unstable; urgency=low
+
+  [ Salvatore Bonaccorso ]
+  * Imported Upstream version 1.72
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+  * debian/copyright: update to Copyright-Format 1.0 (Thanks: Benjamin Kerensa
+    for the bug report. Closes: #692638).
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ Florian Schlichting ]
+  * Imported Upstream version 1.73
+  * Bump Standards-Version to 3.9.4 (no change)
+  * Document proxy usage for mech-dump (Closes: #682286)
+  * Add myself to uploaders and copyright
+
+ -- Florian Schlichting <fsfs@debian.org>  Thu, 19 Sep 2013 21:10:30 +0200
+
+libwww-mechanize-perl (1.71-1) unstable; urgency=low
+
+  * Team upload.
+  * Imported Upstream version 1.71
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 26 Nov 2011 09:24:17 +0100
+
+libwww-mechanize-perl (1.70-1) unstable; urgency=low
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * debian/copyright: Replace DEP5 Format-Specification URL from
+    svn.debian.org to anonscm.debian.org URL.
+
+  [ Nicholas Bamber ]
+  * New upstream release
+  * Removed unnecessary patches
+  * Updated copyright
+
+ -- Nicholas Bamber <nicholas@periapt.co.uk>  Sun, 28 Aug 2011 20:59:27 +0100
+
+libwww-mechanize-perl (1.68-1) unstable; urgency=low
+
+  [ Nicholas Bamber ]
+  * New upstream release
+
+  [ gregor herrmann ]
+  * debian/control: new build and runtime dependency:
+    libhtml-tree-perl.
+  * debian/copyright: new maintainer.
+  * Set Standards-Version to 3.9.2 (no changes).
+
+ -- gregor herrmann <gregoa@debian.org>  Thu, 19 May 2011 00:23:45 +0200
+
+libwww-mechanize-perl (1.66-2) unstable; urgency=low
+
+  [ Ansgar Burchardt ]
+  * Email change: Ansgar Burchardt -> ansgar@debian.org
+
+  [ gregor herrmann ]
+  * Prepare build and runtime dependencies for libwww-perl 6
+    (closes: #620439).
+  * Switch to debhelper 8.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 04 Apr 2011 18:33:21 +0200
+
+libwww-mechanize-perl (1.66-1) unstable; urgency=low
+
+  [ Nicholas Bamber ]
+  * New upstream release
+  * Added myself to Uploaders
+  * Upped standards version to 3.9.1
+  * Refreshed copyright
+  * Refreshed and reviewed patch
+
+  [ gregor herrmann ]
+  * Remove version from libtest-warn-perl build dependency, 0.11 is already in
+    lenny.
+
+ -- Nicholas Bamber <nicholas@periapt.co.uk>  Wed, 15 Sep 2010 21:59:51 +0100
+
+libwww-mechanize-perl (1.64-1) unstable; urgency=low
+
+  * New upstream release.
+    + This release has changes that might break older code.
+      Refer to the upstream changelog for more details.
+  * debian/copyright: Now licensed under Artistic-2.0 or GPL-1+.
+  * Drop patches adding_pod_see_also.patch, spelling.patch: Applied upstream.
+  * Bump Standards-Version to 3.9.0 (no changes).
+
+ -- Ansgar Burchardt <ansgar@43-1.org>  Sat, 03 Jul 2010 12:27:53 +0900
+
+libwww-mechanize-perl (1.62-1) unstable; urgency=low
+
+  [ Ryan Niebur ]
+  * Update ryan52's email address
+
+  [ Ansgar Burchardt ]
+  * New upstream release.
+  * Use source format 3.0 (quilt); drop README.source and quilt framework.
+  * debian/control: Make build-dep on perl unversioned.
+  * debian/control: Add build-dependency on libtest-memory-cycle-perl and
+    libtest-nowarnings-perl to enable additional tests.
+  * Use tiny debian/rules.
+  * Update debian/copyright for current DEP-5 proposal.
+  * Bump Standards-Version to 3.8.4.
+  * Add myself to Uploaders.
+
+  [ gregor herrmann ]
+  * Update years of upstream copyright.
+
+ -- Ansgar Burchardt <ansgar@43-1.org>  Mon, 12 Apr 2010 20:32:12 +0900
+
+libwww-mechanize-perl (1.58-1) unstable; urgency=low
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ Ryan Niebur ]
+  * New upstream release
+  * remove unneeded dependency, copying upstream
+  * Add myself to Uploaders
+  * Debian Policy 3.8.2
+  * update copyright
+
+  [ gregor herrmann ]
+  * Bump build and runtime dependencies on libhttp-server-simple-perl and
+    libwww-perl as per upstream changes.
+
+ -- Ryan Niebur <ryanryan52@gmail.com>  Wed, 15 Jul 2009 01:49:34 -0700
+
+libwww-mechanize-perl (1.54-2) unstable; urgency=low
+
+  * Shorten the list of environment variables we unset in debian/rules
+    (closes: #521990). Thanks to Daniel Schepler for the bug report.
+  * Set Standards-Version to 3.8.1 (no changes).
+  * Add /me to Uploaders.
+  * debian/control: make short description a noun phrase.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 01 Apr 2009 18:05:25 +0200
+
+libwww-mechanize-perl (1.54-1) unstable; urgency=low
+
+  [ Rene Mayorga ]
+  * New upstream release
+  * debian/patches/no_internet.patch; refreshed
+    + remove t/live/computers4sure.t changes
+  * debian/control;
+    + Expand long description based on POD
+  * debian/copyright
+    + correct Upstream-Name field
+    + explicit copyright holders from debian/changelog
+
+  [ gregor herrmann ]
+  * debian/watch: extended regexp for matching upstream releases.
+  * debian/rules: unset http_proxy and friends for running the test suite,
+    otherwise t/cookies.t fails if the variables are set in the environment.
+
+ -- Rene Mayorga <rmayorga@debian.org.sv>  Fri, 16 Jan 2009 17:18:32 -0600
+
+libwww-mechanize-perl (1.52-2) unstable; urgency=low
+
+  * no_internet.patch: add encoding test to skip-list.
+
+ -- Kees Cook <kees@debian.org>  Thu, 18 Dec 2008 10:23:13 -0800
+
+libwww-mechanize-perl (1.52-1) unstable; urgency=low
+
+  [ Rene Mayorga ]
+  * New upstream release (Closes: #507729)
+  * debian/control
+    + set debhelper and compat version to 7
+    + set standards-version to 3.8.0
+    + add libtest-taint-perl to B-D-I
+  * debian/rules
+    + refresh using dh-make-perl template
+    + re-add NOINTERNET var before test
+    + www-mechanize logo no longer installed in usr/share
+  * debian/patches - refresh patches
+  * debian/copyright - convert to the (new)format
+
+  [ gregor herrmann ]
+  * debian/control: Changed: Switched Vcs-Browser field to ViewSVN
+    (source stanza).
+  * New upstream release.
+  * Add (build) dependency on libhttp-response-encoding-perl and
+    libhttp-server-simple-perl.
+  * Bump versioned dependencies on libwww-perl, liburi-perl and
+    libtest-warn-perl.
+  * Add debian/README.source to document quilt usage, as required by
+    Debian Policy since 3.8.0.
+
+  [ Damyan Ivanov ]
+  * update years of copyright
+  * bump perl dependency to 5.8.0
+
+  [ Kees Cook ]
+  * debian/patches/*: add short headers to describe changes.
+  * debian/control:
+    - add libtest-pod-coverage-perl to B-D-I for more tests.
+    - add myself to Uploaders.
+
+ -- Kees Cook <kees@outflux.net>  Thu, 04 Dec 2008 00:29:22 -0800
+
+libwww-mechanize-perl (1.34-2) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * debian/rules: delete /usr/lib/perl5 only if it exists.
+
+  [ Rene Mayorga ]
+  * Make package ready for perl 5.10 update
+  * debian/control
+    + Set compat level to 6
+    + Wrap uploaders field
+  * debian/rules
+    + use dh_listpackage instead of a hardcode package name
+
+ -- Rene Mayorga <rmayorga@debian.org.sv>  Thu, 21 Feb 2008 23:07:47 -0600
+
+libwww-mechanize-perl (1.34-1) unstable; urgency=low
+
+  [ Gregor Herrmann ]
+  * debian/control: Added: Vcs-Svn field (source stanza); Vcs-Browser
+    field (source stanza); Homepage field (source stanza).
+  * Set Maintainer to Debian Perl Group.
+  * Use dist-based URL in debian/watch.
+
+  [ Rene Mayorga ]
+  * New upstream release
+  * debian/control
+     + Set Standard-Version to 3.7.3 (no changes)
+     + Add ${misc:Depends} to Depends
+     + Added Build-Depends-Indep, and move perl modules to there
+     + Add quilt as a Build-Dep
+  * debian/copyright
+     + Add info from other part of the code
+     + Refresh the Copyright years
+     + Add a copyright stanza for the Perl Packaging.
+  * debian/rules
+     + clean debian rules
+     + touching build-stamp and install-stamp
+     + use "distclean" instead of "clean"
+     + remove unused dh_calls
+     + some minor and cosmetical changes
+     + Add quilt
+  * Add debian patches and add no_internet.patch
+    this patch allow to disable t/live/ tests wich depends on internet
+    access. - Closes: #432485  FTBFS bug
+  * move patch for adding "SEE ALSO" to the pods to be manage with quilt
+
+ -- Rene Mayorga <rmayorga@debian.org.sv>  Mon, 10 Dec 2007 23:57:05 -0600
+
+libwww-mechanize-perl (1.30-2) unstable; urgency=low
+
+  * Remove extra debugging file from diff. Dumb mistake on my part. No other
+    changes
+
+ -- Jay Bonci <jaybonci@debian.org>  Fri, 29 Jun 2007 09:53:40 -0400
+
+libwww-mechanize-perl (1.30-1) unstable; urgency=low
+
+  * New upstream release (Closes: #401342)
+  * Added SEE ALSO sections to some of the manpages (Closes: #406562)
+  * Changed the rules file to not ignore clean errors except in ! -f Makefile
+
+ -- Jay Bonci <jaybonci@debian.org>  Fri, 29 Jun 2007 09:25:09 -0400
+
+libwww-mechanize-perl (1.20-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Jay Bonci <jaybonci@debian.org>  Mon,  4 Dec 2006 00:15:38 -0500
+
+libwww-mechanize-perl (1.18-1) unstable; urgency=low
+
+  * New upstream release (Closes: #367252)
+  * Bumped policy-version to 3.7.2.0
+  * Changed debhelper to be Build-Depends instead of Build-Depends Indep
+
+ -- Jay Bonci <jaybonci@debian.org>  Sun,  4 Jun 2006 18:24:05 -0400
+
+libwww-mechanize-perl (1.12-2) unstable; urgency=low
+
+  * Add versioned depends on libwww-perl (Closes: #303831)
+
+ -- Jay Bonci <jaybonci@debian.org>  Mon, 11 Apr 2005 14:53:14 -0400
+
+libwww-mechanize-perl (1.12-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Jay Bonci <jaybonci@debian.org>  Thu, 17 Mar 2005 01:12:13 -0500
+
+libwww-mechanize-perl (1.10-1) unstable; urgency=low
+
+  * New upstream version
+
+ -- Jay Bonci <jaybonci@debian.org>  Thu, 10 Feb 2005 15:38:08 -0500
+
+libwww-mechanize-perl (1.08-1) unstable; urgency=low
+
+  * New upstream version
+
+ -- Jay Bonci <jaybonci@debian.org>  Tue, 28 Dec 2004 21:36:58 -0500
+
+libwww-mechanize-perl (1.04-1) unstable; urgency=low
+
+  * New upstream version
+
+ -- Jay Bonci <jaybonci@debian.org>  Mon, 11 Oct 2004 03:34:22 -0400
+
+libwww-mechanize-perl (1.02-3) unstable; urgency=low
+
+  * Fixed debian/watch file so uscan will actually work
+
+ -- Jay Bonci <jaybonci@debian.org>  Thu,  9 Sep 2004 03:52:02 -0400
+
+libwww-mechanize-perl (1.02-2) unstable; urgency=low
+
+  * Accepting NMU. (closes: #258187)
+    - Many thanks to Kenneth Pronovici for helping out.
+
+ -- Jay Bonci <jaybonci@debian.org>  Wed, 11 Aug 2004 01:03:10 -0400
+
+libwww-mechanize-perl (1.02-1.1) unstable; urgency=low
+
+  * NMU to fix release-critical FTBFS bug (closes: #258187).
+    - Apply patch from Jakob Lell <jlell@jakoblell.de>
+    - Changed expected mech-dump output in t/mech-dump.t
+
+ -- Kenneth J. Pronovici <pronovic@debian.org>  Fri,  6 Aug 2004 14:16:44 -0500
+
+libwww-mechanize-perl (1.02-1) unstable; urgency=low
+
+  * New upstream version (Closes: #247034)
+  * Clean lintian warning for possibly-conflicting debhelper versions
+
+ -- Jay Bonci <jaybonci@debian.org>  Tue,  4 May 2004 04:35:56 -0400
+
+libwww-mechanize-perl (0.72-1) unstable; urgency=low
+
+  * New upstream version
+
+ -- Jay Bonci <jaybonci@debian.org>  Tue, 10 Feb 2004 15:48:57 -0500
+
+libwww-mechanize-perl (0.70-1) unstable; urgency=low
+
+  * New upstream version
+  * Diff'ed the makefile to force vendor install
+
+ -- Jay Bonci <jaybonci@debian.org>  Fri,  2 Jan 2004 16:21:55 -0500
+
+libwww-mechanize-perl (0.66-1) unstable; urgency=low
+
+  * New upstream version
+  * Adds build-dependancy on libtest-warn-perl, as it is now in the archive
+
+ -- Jay Bonci <jaybonci@debian.org>  Mon, 17 Nov 2003 15:28:42 -0500
+
+libwww-mechanize-perl (0.63-1) unstable; urgency=low
+
+  * New upstream version
+  * Adds a Build-Dependancy on netbase (Closes: #216124)
+    - Should fix the FTBTS problem
+    - Thanks to Daniel Schepler for the report
+  * Adds a Build-Dependancy on libtest-exception-perl
+  * Changed the Makefile.PL around a bit to not include web tests or the referer
+    test. Both don't work under autobuilders.
+
+ -- Jay Bonci <jaybonci@debian.org>  Tue, 21 Oct 2003 01:13:05 -0400
+
+libwww-mechanize-perl (0.60-1) unstable; urgency=low
+
+  * Initial Release (Closes: #191404)
+
+ -- Jay Bonci <jaybonci@debian.org>  Wed, 24 Sep 2003 15:47:55 -0400

@@ -1,0 +1,61 @@
+Source: libwww-mechanize-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: gregor herrmann <gregoa@debian.org>,
+           Ansgar Burchardt <ansgar@debian.org>,
+           Florian Schlichting <fsfs@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+Build-Depends-Indep: libcgi-pm-perl <!nocheck>,
+                     libhtml-form-perl <!nocheck>,
+                     libhtml-parser-perl <!nocheck>,
+                     libhtml-tree-perl <!nocheck>,
+                     libhttp-cookies-perl <!nocheck>,
+                     libhttp-daemon-perl <!nocheck>,
+                     libhttp-message-perl <!nocheck>,
+                     libhttp-server-simple-perl <!nocheck>,
+                     libio-socket-ssl-perl <!nocheck>,
+                     libpath-tiny-perl <!nocheck>,
+                     libtest-deep-perl <!nocheck>,
+                     libtest-exception-perl <!nocheck>,
+                     libtest-fatal-perl <!nocheck>,
+                     libtest-memory-cycle-perl <!nocheck>,
+                     libtest-nowarnings-perl <!nocheck>,
+                     libtest-output-perl <!nocheck>,
+                     libtest-pod-coverage-perl <!nocheck>,
+                     libtest-pod-perl <!nocheck>,
+                     libtest-taint-perl <!nocheck>,
+                     libtest-warn-perl <!nocheck>,
+                     libtest-warnings-perl <!nocheck>,
+                     liburi-perl <!nocheck>,
+                     libwww-perl <!nocheck>,
+                     netbase <!nocheck>,
+                     perl
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libwww-mechanize-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libwww-mechanize-perl.git
+Homepage: https://metacpan.org/release/WWW-Mechanize
+Rules-Requires-Root: no
+
+Package: libwww-mechanize-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libcgi-pm-perl,
+         libhtml-form-perl,
+         libhtml-parser-perl,
+         libhtml-tree-perl,
+         libhttp-cookies-perl,
+         libhttp-message-perl,
+         libhttp-server-simple-perl,
+         liburi-perl,
+         libwww-perl (>= 6.45)
+Recommends: libio-socket-ssl-perl
+Description: module to automate interaction with websites
+ WWW::Mechanize, or Mech for short, helps you automate interaction with
+ a website. It supports performing a sequence of page fetches including
+ following links and submitting forms. Each fetched page is parsed and
+ its links and forms are extracted. A link or a form can be selected, form
+ fields can be filled and the next page can be fetched. Mech also stores
+ a history of the URLs you've visited, which can be queried and revisited.

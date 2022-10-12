@@ -1,0 +1,3 @@
+# We're a library, but have a handy application bundled in the distribution
+libwww-mechanize-perl: library-package-name-for-application usr/bin/mech-dump
+libwww-mechanize-perl: application-in-library-section perl usr/bin/mech-dump

@@ -1,0 +1,12 @@
+libwww-mechanize-perl (1.64-1) unstable; urgency=low
+
+  This release introduces changes that might break applications.  From the
+  upstream changelog:
+
+    [THINGS THAT MAY BREAK YOUR CODE]
+    If you've been accessing $mech->{forms} or $mech->{form} values directly,
+    instead of going through the $mech->forms or $mech->current_form
+    accessors, respectively, then this version of Mech will break your code.
+
+
+ -- Ansgar Burchardt <ansgar@43-1.org>  Sat, 03 Jul 2010 12:26:25 +0900

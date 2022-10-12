@@ -1,0 +1,4 @@
+# relies on contents of MANIFEST
+t/upload.t
+# fails on ipv6-only hosts: #962727
+t/cookies.t
